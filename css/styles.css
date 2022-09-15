@@ -1,0 +1,38 @@
+:root {
+  --bg: #282a36;
+  --borde: #ff5555;
+  --bg-secudario: #44475a;
+  --text-color: #f8f8f2;
+}
+
+/* Body */
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+/* Container default */
+.container {
+  display: flex;
+  border-radius: 2rem;
+  background-color: var(--bg-secudario);
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.container img {
+  width: 14rem;
+  height: 14rem;
+  margin-top: 1.5rem;
+  border-radius: 50%;
+  border: solid var(--borde) .8rem;
+}
+
+.container h1 {
+  font-size: 24pt;
+  text-align: center;
+  margin-top: 2rem;
+}
