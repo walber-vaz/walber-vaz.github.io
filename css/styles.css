@@ -32,9 +32,19 @@ body {
   color: var(--text-color);
   background-color: var(--bg-secudario);
   padding: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: var(--borde);
+  transition: ease-out 300ms;
 }
 
 /* btn */
+#sobre-btn, #portfolio-btn {
+  font-size: 13pt;
+}
+
 #sobre-btn {
   border-radius: 2rem 0 0 2rem;
 }
