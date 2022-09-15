@@ -9,21 +9,61 @@
 body {
   background-color: var(--bg);
   color: var(--text-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header menu */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--bg-secudario);
+  padding: 1.5rem;
+}
+
+/* btn */
+#sobre-btn {
+  border-radius: 2rem 0 0 2rem;
+}
+
+#portfolio-btn {
+  border-radius: 0 2rem 2rem 0;
 }
 
 /* Container default */
 .container {
   display: flex;
-  border-radius: 2rem;
-  background-color: var(--bg-secudario);
   justify-content: center;
   align-items: center;
+  border-radius: 2rem;
+  background-color: var(--bg-secudario);
   width: 960px;
   margin: 0 auto;
   margin-top: 3rem;
 }
 
-.container img {
+/* Imagem user */
+.img-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-user img {
   width: 14rem;
   height: 14rem;
   margin-top: 1.5rem;
@@ -31,8 +71,8 @@ body {
   border: solid var(--borde) .8rem;
 }
 
-.container h1 {
+.img-user h1 {
   font-size: 24pt;
-  text-align: center;
+  font-weight: bold;
   margin-top: 2rem;
 }
