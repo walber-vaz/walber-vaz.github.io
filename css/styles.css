@@ -91,13 +91,6 @@ body {
   margin-top: 2rem;
 }
 
-/* Social */
-.social {
-  margin-top: 1rem;
-  border-top: .2rem solid var(--text-color);
-  padding: 1rem;
-}
-
 /* Descrição */
 .desc {
   margin-top: .5rem;
@@ -105,7 +98,36 @@ body {
   line-height: 1.5rem;
 }
 
+/* Social */
+.social {
+  margin-top: 1rem;
+  border-top: .2rem solid var(--text-color);
+  padding: 1rem;
+}
+
 .desc span {
   color: var(--borde-2);
   font-weight: 600;
+}
+
+/* habilidades */
+.habilidades h4 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+.habilidades>h4:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--borde);
+}
+
+.habilidades li {
+  display: flex;
+  text-align: center;
+  line-height: 1.8rem;
+  justify-content: center;
+  font-size: 1.2rem;
 }
