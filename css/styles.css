@@ -97,3 +97,15 @@ body {
   border-top: .2rem solid var(--text-color);
   padding: 1rem;
 }
+
+/* Descrição */
+.desc {
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.desc span {
+  color: var(--borde-2);
+  font-weight: 600;
+}
