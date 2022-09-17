@@ -1,6 +1,7 @@
 :root {
   --bg: #282a36;
   --borde: #ff5555;
+  --borde-2: #50fa7b;
   --bg-secudario: #44475a;
   --text-color: #f8f8f2;
 }
@@ -56,6 +57,7 @@ body {
 /* Container default */
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
@@ -63,6 +65,7 @@ body {
   width: 960px;
   margin: 0 auto;
   margin-top: 3rem;
+  box-shadow: .8rem 2rem 3rem rgba(0 , 0, 0, .5);
 }
 
 /* Imagem user */
@@ -77,12 +80,20 @@ body {
   width: 14rem;
   height: 14rem;
   margin-top: 1.5rem;
-  border-radius: 50%;
-  border: solid var(--borde) .8rem;
+  border-radius: 100%;
+  border: solid var(--borde) .6rem;
+  box-shadow: .2rem .2rem 1rem rgba(0 , 0, 0, .5);
 }
 
 .img-user h1 {
   font-size: 24pt;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+/* Social */
+.social {
+  margin-top: 1rem;
+  border-top: .2rem solid var(--text-color);
+  padding: 1rem;
 }
