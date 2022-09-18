@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -15,17 +16,20 @@
   <!-- Header menu -->
   <header class="header">
     <div class="menu">
-      <a href="#sobre" id="sobre-btn">Sobre</a>
-      <a href="http://www.github.com/walber-vaz" id="portfolio-btn"  target="_blank">Portfólio</a>
+      <a href="#sobre" id="sobre-btn"><i class="fa-solid fa-pen-to-square"></i> Sobre</a>
+      <a href="http://www.github.com/walber-vaz" id="portfolio-btn"  target="_blank"><i class="fa-regular fa-folder-open"></i> Portfólio</a>
     </div>
   </header>
   <!-- Conteúdo  -->
   <div class="container">
     <!-- Imagem -->
     <div class="img-user">
-      <img src="./img/img.jpg" alt="Foto do w2k">
+      <a href="/"><img src="./img/img.jpg" alt="Foto do w2k"></a>
       <h1>Walber Vaz da Silva</h1>
     </div>
+    <!-- Descrição -->
+    <p class="desc">Brasileiro, <span>Paraense</span> morando em <span>São Miguel do Guamá - PA</span></p>
+    <p class="desc"><span>Casado</span> e tenho 2 <span>filhos</span></p>
     <!-- Social -->
     <div class="social">
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" />
@@ -33,6 +37,26 @@
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" />
       <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="css3" />
       <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="linux" />
+    </div>
+    <!-- Sessão -->
+    <div class="sessao">
+      <div class="habilidade">
+        <h4><i class="fa-solid fa-list-check"></i> Habilidades</h4>
+        <ul>
+          <li><i class="fa-solid fa-check"></i>&nbsp; <span>Programa</span></li>
+          <li><i class="fa-solid fa-check"></i>&nbsp; <span>Tocar guitarra</span></li>
+          <li><i class="fa-solid fa-check"></i>&nbsp; Consertar computador</li>
+        </ul>
+      </div>
+      <!-- Blog  -->
+      <div class="blogs">
+        <h4><i class="fa-solid fa-rss"></i> Blogs que sigo</h4>
+        <ul>
+          <li><i class="fa-solid fa-check"></i>&nbsp; <span>Diolinux</span></li>
+          <li><i class="fa-solid fa-check"></i>&nbsp; Sempreupdate</li>
+          <li><i class="fa-solid fa-check"></i>&nbsp; <span>The Hacker News</span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

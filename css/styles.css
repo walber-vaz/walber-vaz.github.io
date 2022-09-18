@@ -43,7 +43,7 @@ body {
 
 /* btn */
 #sobre-btn, #portfolio-btn {
-  font-size: 13pt;
+  font-size: 1rem;
 }
 
 #sobre-btn {
@@ -86,9 +86,16 @@ body {
 }
 
 .img-user h1 {
-  font-size: 24pt;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+/* Descrição */
+.desc {
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 /* Social */
@@ -96,4 +103,57 @@ body {
   margin-top: 1rem;
   border-top: .2rem solid var(--text-color);
   padding: 1rem;
+}
+
+.desc span {
+  color: var(--borde-2);
+  font-weight: 600;
+}
+
+/* Sessão */
+.sessao {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Habilidade */
+.habilidade {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border-right: .2rem solid var(--text-color);
+}
+
+.habilidade h4, .blogs h4 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.habilidade ul, .blogs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.habilidade span, .blogs span {
+  color: var(--borde-2);
+  font-weight: bold;
+}
+
+/* Blogs */
+.blogs {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
