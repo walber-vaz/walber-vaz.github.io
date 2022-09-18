@@ -43,7 +43,7 @@ body {
 
 /* btn */
 #sobre-btn, #portfolio-btn {
-  font-size: 13pt;
+  font-size: 1rem;
 }
 
 #sobre-btn {
@@ -86,7 +86,7 @@ body {
 }
 
 .img-user h1 {
-  font-size: 24pt;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-top: 2rem;
 }
@@ -110,24 +110,50 @@ body {
   font-weight: 600;
 }
 
-/* habilidades */
-.habilidades h4 {
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-top: 1.8rem;
-  margin-bottom: .8rem;
+/* Sessão */
+.sessao {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
-.habilidades>h4:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--borde);
-}
-
-.habilidades li {
+/* Habilidade */
+.habilidade {
+  width: 50%;
+  padding: 1rem;
   display: flex;
   text-align: center;
-  line-height: 1.8rem;
-  justify-content: center;
-  font-size: 1.2rem;
+  flex-direction: column;
+  border-right: .2rem solid var(--text-color);
+}
+
+.habilidade h4, .blogs h4 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.habilidade ul, .blogs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.habilidade span, .blogs span {
+  color: var(--borde-2);
+  font-weight: bold;
+}
+
+/* Blogs */
+.blogs {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
