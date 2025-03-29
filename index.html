@@ -1,16 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;Walber Vaz /&gt; | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de desenvolvedor full stack com foco em backend.">
+  <meta name="keywords" content="Desenvolvedor, Full Stack, Backend, Portfólio">
+  <meta name="author" content="Walber Vaz">
+  <title>w2k - Desenvolvedor</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <header class="container header">
+    <h1 class="header-logo">w2k</h1>
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#formation">Formação</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container container-grid introduction">
+    <img src="./assets/imgs/perfil.png" alt="Foto de perfil" width="360" height="520">
+    <div>
+      <h1>Desenvolvedor<br />Full Stack<br />Foco em Backend</h1>
+      <p>Localizado no Pará - Brasil</p>
+      <p class="social-media">GitHub: <a href="https://github.com/walber-vaz" target="_blank" rel="noopener noreferrer">@walber-vaz</a></p>
+    </div>
+  </main>
+  <section class="container container-grid experience" aria-label="Experiência" id="experience">
+    <h2 class="subtitle">Experiência</h2>
+    <div>
+      <p class="experience-description">Desenvolvo aplicações para web com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> e usando frameworks como <strong>React</strong>. No <strong>backend</strong>, utilizo <strong>Node.js</strong>, <strong>Python</strong> e <strong>Java</strong>. Ja trabalhei em diversos projetos pessoais e profissionais.</p>
+
+      <div class="enterprise">
+        <span class="enterprise-year">2023/2025</span>
+        <h3 class="enterprise-title">Virotrip</h3>
+        <span class="enterprise-title">Desenvolvedor Full Stack</span>
+        <p class="enterprise-description">Desenvolvimento de uma plataforma de reservas de viagens e assinaturas de planos. Utilizando tecnologias como <strong>AWS</strong>, <strong>React(TypeScript)</strong>, <strong>Node.js</strong>, <strong>PostgreSQL</strong> e <strong>Python(FastAPI)</strong>.</p>
+        <ul class="enterprise-technologies">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>PostgreSQL</li>
+          <li>AWS</li>
+          <li>FastAPI</li>
+          <li>TypeScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="formation" aria-label="Formação" id="formation">
+    <div class="formation-container">
+      <h2 class="subtitle">Formação</h2>
+      <div>
+        <p class="formation-description">Graduação em andamento em <strong>Engenharia de Computação</strong></p>
+        <ul class="formation-list">
+          <li class="formation-item">
+            <span class="formation-degree">Graduação</span>
+            <h3 class="formation-title">Engenharia de Computação</h3>
+            <span class="formation-institution">Descomplica</span>
+          </li>
+        </ul>
+        <div class="formation-extra">
+          <div class="formation-course">
+            <h3>Cursos complementares</h3>
+            <ul>
+              <li>Desenvolvedor Full Stack <span>1500h</span></li>
+            </ul>
+          </div>
+          <div class="formation-languages">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Básico</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <p class="footer-description">Estou disponível para novos projetos. Entre em contato comigo e marcamos uma conversa.</p>
+      <ul class="footer-contact">
+        <li><a href="mailto:wvs.walber@gmail.com">wvs.walber@gmail.com</a></li>
+        <li><a href="https://github.com/walber-vaz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/walber-vaz/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+      <p class="footer-copy">w2k. Alguns direitos reservados</p>
+    </div>
+  </footer>
 </body>
 
 </html>
