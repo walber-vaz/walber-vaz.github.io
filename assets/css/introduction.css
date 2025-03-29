@@ -1,0 +1,73 @@
+.introduction {
+  align-items: center;
+}
+
+.introduction h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introduction h1::before {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url('../imgs/detalhe.svg') no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+.introduction .social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 1.3rem;
+}
+
+.introduction .social-media a {
+  color: #141414;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .introduction h1 {
+    font-size: 2rem;
+  }
+
+  .introduction h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+  
+  .introduction img {
+    display: none;
+  }
+}
