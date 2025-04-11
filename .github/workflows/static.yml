@@ -93,9 +93,11 @@ jobs:
       - name: Update HTML references
         run: |
           # Atualiza as referências CSS no HTML para apontar para o arquivo único minificado
-          find . -type f -name "*.html" -exec sed -i 's/styles\.css/styles\.min\.css/g' {} \;
+          # Exclui os arquivos na pasta trabalho-ads-js-html-js
+          find . -type f -name "*.html" -not -path "./trabalho-ads-js-html-js/*" -exec sed -i 's/styles\.css/styles\.min\.css/g' {} \;
           # Atualiza as referências JS
-          find . -type f -name "*.html" -exec sed -i 's/\.js"/\.min\.js"/g' {} \;
+          # Exclui os arquivos na pasta trabalho-ads-js-html-js
+          find . -type f -name "*.html" -not -path "./trabalho-ads-js-html-js/*" -exec sed -i 's/\.js"/\.min\.js"/g' {} \;
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
