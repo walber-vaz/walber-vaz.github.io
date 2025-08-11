@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formação - Walber Vaz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Walber Vaz</h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html" class="nav-link">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="formacao.html" class="nav-link active">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Formação Educacional</h1>
+        <p>Minha trajetória acadêmica e conhecimentos adquiridos</p>
+      </div>
+    </section>
+
+    <section class="education-content">
+      <div class="container">
+        <div class="education-section">
+          <h2>🎓 Educação Formal</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker current"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Análise e Desenvolvimento de Sistemas</h3>
+                  <span class="timeline-date">2025 - Cursando</span>
+                </div>
+                <h4>UNINTER</h4>
+                <p>
+                  Atualmente cursando Análise e Desenvolvimento de Sistemas com foco em desenvolvimento web.
+                  Durante o curso, tenho desenvolvido conhecimentos em programação,
+                  desenvolvimento web, banco de dados e outras tecnologias relevantes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h2>🛠️ Habilidades Técnicas</h2>
+
+          <div class="skills-categories">
+            <div class="skill-category">
+              <h4>Linguagens de Programação</h4>
+              <div class="skill-tags"> <!-- Tags de habilidades -->
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript/TypeScript/Nodejs</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Ferramentas e Tecnologias</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Figma</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Soft Skills</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Trabalho em equipe</span>
+                <span class="skill-tag">Comunicação</span>
+                <span class="skill-tag">Resolução de problemas</span>
+                <span class="skill-tag">Aprendizado contínuo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Walber Vaz. Todos os direitos reservados.</p>
+      <p>Projeto desenvolvido para a disciplina Fundamentos da Programação Web</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+  </script>
+</body>
+
+</html>

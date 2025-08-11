@@ -1,69 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Perfil</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>Meu Portfólio - Walber Vaz</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
-    <h1>Walber Vaz da Silva</h1>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Walber Vaz</h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html" class="nav-link">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="formacao.html" class="nav-link">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <section class="about">
-      <p>
-        Olá! Meu nome é Walber Vaz da Silva, tenho 33 anos e moro em São Miguel do Guamá - PA. Sou estudante de ADS e apaixonado por tecnologia desde criança. Sempre fui curioso sobre como os computadores funcionam e como desenvolver sistemas que possam ajudar as pessoas. Nos meus tempos livres, gosto de jogar cs nos tempos livres, prender coisas novas relacionadas a tecnologia (programação). Estou sempre em busca de novos desafios e oportunidades para crescer tanto profissionalmente quanto pessoalmente.
-      </p>
-
-      <button id="message-btn">Clique para ver uma mensagem!</button>
-      <p id="message-display"></p>
-    </section>
-
-    <section class="hobbies">
-      <h2>Meus Hobbies</h2>
-      <ul>
-        <li>Programar</li>
-        <li>Jogar CS</li>
-        <li>Tocar guitarra</li>
-      </ul>
-
-      <div class="hobby-image">
-        <img src="https://images.unsplash.com/photo-1595472968262-48209bf5b390?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fotografia de paisagem">
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Bem-vindo ao meu portfólio!</h2>
+        <p class="hero-subtitle">Desenvolvedor FullStack | Estudante (ADS) | Apaixonado por tecnologia</p>
+        <div class="hero-buttons">
+          <a href="sobre.html" class="btn btn-primary">Conhece mais sobre mim</a>
+          <a href="portfolio.html" class="btn btn-secondary">Ver meus projetos</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="placeholder-image">
+          <img src="https://avatar.iran.liara.run/public/34" alt="Avatar Walber Vaz" style="width:100%;max-width:250px;border-radius:50%;display:block;margin:auto;">
+        </div>
       </div>
     </section>
 
-    <section class="countries">
-      <h2>Países que Gostaria de Visitar</h2>
-      <table>
-        <tr>
-          <th>País</th>
-          <th>Imagem</th>
-        </tr>
-        <tr>
-          <td>Japão</td>
-          <td><img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Japão"></td>
-        </tr>
-        <tr>
-          <td>Portugal</td>
-          <td><img src="https://images.unsplash.com/photo-1501927023255-9063be98970c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Portugal"></td>
-        </tr>
-        <tr>
-          <td>Espanha</td>
-          <td><img src="https://images.unsplash.com/photo-1501927023255-9063be98970c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Espanha"></td>
-        </tr>
-      </table>
+    <section class="quick-intro">
+      <div class="container">
+        <h3>Um pouco sobre mim</h3>
+        <p>
+          Olá! Sou estudante de Análise e Desenvolvimento de Sistemas e estou desenvolvendo minhas habilidades em
+          programação web. Este portfólio foi criado para demonstrar meus conhecimentos
+          em HTML e CSS, conforme solicitado na disciplina de Fundamentos da Programação Web.
+        </p>
+        <div class="skills-preview">
+          <div class="skill">
+            <h4>HTML5</h4>
+            <p>Estruturação semântica</p>
+          </div>
+          <div class="skill">
+            <h4>CSS3</h4>
+            <p>Estilização e layouts</p>
+          </div>
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <p>Interatividade básica</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Para saber mais sobre tecnologia, visite <a href="https://github.com/walber-vaz" target="_blank">GitHub</a></p>
+    <div class="container">
+      <p>&copy; 2025 Walber Vaz. Todos os direitos reservados.</p>
+      <p>Projeto desenvolvido para a disciplina Fundamentos da Programação Web</p>
+    </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Walber Vaz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Walber Vaz</h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html" class="nav-link">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="formacao.html" class="nav-link">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link active">Contato</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Entre em Contato</h1>
+        <p>Vamos conversar sobre projetos, oportunidades ou apenas trocar uma ideia!</p>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Vamos nos conectar!</h2>
+            <p>
+              Estou sempre aberto a novas oportunidades, projetos interessantes
+              e conexões profissionais. Se você tem uma ideia, um projeto em mente
+              ou apenas quer bater um papo sobre tecnologia, ficarei feliz em conversar!
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>email@email.com</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                  <h4>WhatsApp</h4>
+                  <p>(91) 9999-9999</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <h4>Localização</h4>
+                  <p>São Miguel do Guama, Pará</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">💼</div>
+                <div class="contact-details">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/walber-vaz</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <div class="contact-form">
+              <h3>Envie uma mensagem</h3>
+              <p>Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+
+              <div class="form-container">
+                <div class="form-group">
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" id="nome" name="nome" required>
+                  <span class="form-error" id="nome-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <span class="form-error" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone">Telefone (opcional)</label>
+                  <input type="tel" id="telefone" name="telefone">
+                </div>
+
+                <div class="form-group">
+                  <label for="assunto">Assunto</label>
+                  <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="projeto">Projeto/Colaboração</option>
+                    <option value="oportunidade">Oportunidade de Trabalho</option>
+                    <option value="duvida">Dúvida Técnica</option>
+                    <option value="networking">Networking</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                  <span class="form-error" id="assunto-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Descreva sua mensagem, projeto ou oportunidade..."></textarea>
+                  <span class="form-error" id="mensagem-error"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <span class="checkmark"></span>
+                    Gostaria de receber atualizações sobre meus projetos
+                  </label>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="enviarMensagem()">
+                  Enviar Mensagem
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Walber Vaz. Todos os direitos reservados.</p>
+      <p>Projeto desenvolvido para a disciplina Fundamentos da Programação Web</p>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+
+    function validarEmail(email) {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+    }
+
+    function limparErros() {
+      document.querySelectorAll('.form-error').forEach(error => {
+        error.textContent = '';
+      });
+      document.querySelectorAll('.form-group').forEach(group => {
+        group.classList.remove('error');
+      });
+    }
+
+    function mostrarErro(campo, mensagem) {
+      const errorElement = document.getElementById(campo + '-error');
+      const formGroup = document.getElementById(campo).closest('.form-group');
+
+      errorElement.textContent = mensagem;
+      formGroup.classList.add('error');
+    }
+
+    function enviarMensagem() {
+      limparErros();
+
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const assunto = document.getElementById('assunto').value;
+      const mensagem = document.getElementById('mensagem').value.trim();
+
+      let temErro = false;
+
+      if (!nome || nome.length < 2) {
+        mostrarErro('nome', 'Nome deve ter pelo menos 2 caracteres');
+        temErro = true;
+      }
+
+      if (!email) {
+        mostrarErro('email', 'Email é obrigatório');
+        temErro = true;
+      } else if (!validarEmail(email)) {
+        mostrarErro('email', 'Email inválido');
+        temErro = true;
+      }
+
+      if (!assunto) {
+        mostrarErro('assunto', 'Selecione um assunto');
+        temErro = true;
+      }
+
+      if (!mensagem || mensagem.length < 10) {
+        mostrarErro('mensagem', 'Mensagem deve ter pelo menos 10 caracteres');
+        temErro = true;
+      }
+
+      if (!temErro) {
+        alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso. Responderei em breve!`);
+
+        document.getElementById('nome').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('telefone').value = '';
+        document.getElementById('assunto').value = '';
+        document.getElementById('mensagem').value = '';
+        document.getElementById('newsletter').checked = false;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const inputs = ['nome', 'email', 'assunto', 'mensagem'];
+
+      inputs.forEach(inputId => {
+        const input = document.getElementById(inputId);
+        input.addEventListener('input', function () {
+          const errorElement = document.getElementById(inputId + '-error');
+          const formGroup = input.closest('.form-group');
+
+          if (input.value.trim()) {
+            errorElement.textContent = '';
+            formGroup.classList.remove('error');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
